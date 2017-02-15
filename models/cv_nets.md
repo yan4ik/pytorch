@@ -1,5 +1,6 @@
 ### LeNet
 
+```python
 from functools import reduce
 import operator as op
 
@@ -46,3 +47,4 @@ class LeNet(nn.Module):
 
 criterion = nn.CrossEntropyLoss()
 optimizer = optim.SGD(net.parameters(), lr=0.001, momentum=0.9)
+```
